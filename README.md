@@ -2,6 +2,8 @@
 
 A CTF that I built.
 
+The writeup is available here https://appsecexplained.gitbook.io/appsecexplained/my-writeups-ctf-and-bugbounty/cobrakai-dojo-medium
+
 ## Setup:
 
 ```
