@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
+    <title>Cobra Kai</title>
+</head>
+
+<body class="container text-light">
+    <div class="inner-container">
+        <header>
+            <h1><img style="width: 2em" src="/images/logo.png"> Cobra Kai Dojo</h1>
+        </header>
+
+        <div class="row">
+            <!-- about & join -->
+            <div class="col-md-6 d-flex">
+                <div class="card mb-4 box-shadow text-white bg-dark">
+                    <div class="card-body">
+                        <h2 class="mb-4">Account info</h2>
+                        <p>Students can view their account information here. Senseis can access the administrative interface.</p>
+                        <hr>
+                        <div id="sensei-forms">
+                            <form action="/api/admin/upload" method="post" id="uploadForm" enctype="multipart/form-data">
+                                <h2>Upload photos:</h2>
+                                <label for="photos">Choose photos:</label>
+                                <input type="file" id="photos" name="photos" multiple>
+                                <input type="submit" value="Upload">
+                            </form>
+                            <ul id="fileList"></ul>
+                            <form id="executeForm">
+                                <h2>Update server:</h2>
+                                <p>Warning: This should only be done by web admins only.</p>
+                                <label for="filePath">File Path:</label>
+                                <input type="text" id="filePath" name="filePath" required>
+                                <input type="submit" value="Execute">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- news -->
+            <div class="col-md-6 d-flex">
+                <div class="card mb-4 box-shadow text-white bg-dark">
+                    <div class="card-body">
+                        <h2 class="mb-4">About</h2>
+                        <div class="card text-white bg-dark">
+                            <img src="/images/cobrakai.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Get ready to witness the spirit of Karate in its purest form at the
+                                    highly anticipated All Valley Tournament! </p>
+                                <p class="card-text">This year, we're bringing stronger competitors, fiercer battles,
+                                    and unforgettable moments.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <!-- Section 3: Weekly Schedule -->
+            <div class="col">
+                <a href="/api/logout" class="btn btn-danger mt-4" type="button" id="logoutButton">Logout</a>
+            </div>
+        </div>
+    </div>
+    <script src="/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="/js/app-dashboard.js"></script>
+
+
+</body>
+
+</html>

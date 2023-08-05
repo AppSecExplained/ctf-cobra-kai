@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
+    <title>Cobra Kai</title>
+</head>
+
+<body class="container text-light">
+    <div class="inner-container">
+        <header>
+            <h1><img style="width: 2em" src="/images/logo.png"> Cobra Kai Dojo</h1>
+        </header>
+
+        <div class="row">
+            <!-- about & join -->
+            <div class="col-md-6 d-flex">
+                <div class="card mb-4 box-shadow text-white bg-dark">
+                    <div class="card-body">
+                        <h2 class="mb-4">About</h2>
+                        <p>Welcome to the Cobra Kai Karate dojo – where legacy meets modernity and strength meets
+                            discipline. As successors of the legendary karate tradition, we honor the past while
+                            fearlessly forging the future. </p>
+                        <p>In our dojo, we believe that karate is more than just a martial art; it's a way of life,
+                            instilling values of respect, perseverance, and indomitable spirit. Our world-class
+                            instructors are committed to nurturing every student's potential, regardless of their age or
+                            skill level. </p>
+                        <p>Strike first, strike hard, no mercy - this is the Cobra Kai way. Welcome to the family.</p>
+                        <button class="btn btn-danger mt-4" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#task-form" aria-expanded="false" aria-controls="task-form">Join
+                            Cobra Kai</button>
+                        <div class="collapse" id="task-form">
+                            <div id="message"></div>
+                            <form class="mt-4" id="registerForm">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="username" class="form-label">Name</label>
+                                        <input type="text" class="form-control" id="username" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="password" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="password">
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-danger">Become badass</button>
+                                <button id="loginButton" class="btn btn-danger">Already Badass? Login here...</button>
+                            </form>
+                            <form class="mt-4" id="loginForm" style="display: none;">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="login-username" class="form-label">Name</label>
+                                        <input type="text" class="form-control" id="login-username" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="login-password" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="login-password">
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-danger">Log in</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- news -->
+            <div class="col-md-6 d-flex">
+                <div class="card mb-4 box-shadow text-white bg-dark">
+                    <div class="card-body">
+                        <h2 class="mb-4">Latest news</h2>
+                        <div class="card text-white bg-dark">
+                            <img src="/images/cobrakai.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Get ready to witness the spirit of Karate in its purest form at the
+                                    highly anticipated All Valley Tournament! </p>
+                                <p class="card-text">This year, we're bringing stronger competitors, fiercer battles,
+                                    and unforgettable moments.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <!-- Section 3: Weekly Schedule -->
+            <div class="col">
+                <h2 class="mb-4t">Schedule</h2>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-sm text-light" id="scheduleTable">
+                        
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="/js/app.js"></script>
+
+
+</body>
+
+</html>

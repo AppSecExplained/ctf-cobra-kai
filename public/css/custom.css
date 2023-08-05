@@ -1,0 +1,19 @@
+body {
+    background-color: #FAE137;
+}
+
+.inner-container {
+    background-color: #0F0E17;
+    border-radius: 15px;
+    padding: 2em;
+    margin: 2em 0em
+}
+
+h1 {
+    font-size: 70px;
+    margin: 0.2em 0 0.6em;
+}
+
+#uploadForm {
+    margin-bottom: 1em;
+}

@@ -1,0 +1,19 @@
+version: '3'
+services:
+  cobra-kai-app:
+    container_name: cobra-kai-app
+    restart: always
+    build: .
+    ports:
+      - '80:3000'
+    volumes:
+      - .:/usr/src/app
+    external_links:
+      - cobra-kai-mongo
+  cobra-kai-mongo:
+    container_name: cobra-kai-db
+    image: mongo:4.4
+    ports:
+      - '27017:27017'
+    volumes:
+      - ./data/mongodb:/data/db
